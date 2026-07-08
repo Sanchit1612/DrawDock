@@ -1,4 +1,4 @@
-const WEBSITE_URL = "http://localhost:5173?popup=true";
+const WEBSITE_URL = "https://draw-dock.vercel.app/";
 
 document.getElementById("board").src = WEBSITE_URL;
 
