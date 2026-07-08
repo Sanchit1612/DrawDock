@@ -102,12 +102,12 @@ DrawDock is designed to be **one click away**, disposable-but-shareable, and sma
 | `images/extension.png` | Chrome Extension popup UI |
 | `images/install-extension.png` | `chrome://extensions` → Developer Mode → Load unpacked |
 
-```md
-<!-- Example embed once images are added -->
 ![Home Screen](images/home.png)
 ![Real-time Collaboration](images/collaboration.gif)
-```
-<img width="1915" height="1028" alt="image" src="https://github.com/user-attachments/assets/2710dc31-4ff2-4f4d-95a8-fd23b3f67db6" />
+![AI Notes](images/ai-notes.png)
+![Share Board](images/share.png)
+![Chrome Extension](images/extension.png)
+![Install Extension](images/install-extension.png)
 
 ---
 
