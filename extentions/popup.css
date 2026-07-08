@@ -1,0 +1,45 @@
+html,
+body{
+    margin:0;
+    padding:0;
+
+    width:800px;
+    height:600px;
+
+    overflow:hidden;
+    font-family:Arial,sans-serif;
+}
+
+.navbar{
+    height:50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 15px;
+    background:#ffffff;
+    border-bottom:1px solid #ddd;
+}
+
+.navbar h2{
+    margin:0;
+    font-size:18px;
+}
+
+button{
+    cursor:pointer;
+    border:none;
+    background:#222;
+    color:white;
+    border-radius:8px;
+    padding:8px 12px;
+}
+
+button:hover{
+    background:#444;
+}
+
+iframe{
+    width:100%;
+    height:calc(100% - 50px);
+    border:none;
+}

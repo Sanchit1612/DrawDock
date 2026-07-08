@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "DrawDock",
+  "version": "1.0",
+  "description": "Collaborative Whiteboard",
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"]
+}
