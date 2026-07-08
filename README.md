@@ -91,8 +91,6 @@ DrawDock is designed to be **one click away**, disposable-but-shareable, and sma
 
 ## 📸 Screenshots
 
-> Add your captures to an `images/` folder at the repo root using the file names below — they'll render automatically once added.
-
 | Preview | Description |
 |---|---|
 | `images/home.png` | Whiteboard canvas, toolbar, drawings, and sticky notes |
@@ -171,19 +169,18 @@ flowchart LR
     subgraph Client["Browser / Chrome Extension"]
         UI["React + tldraw Canvas"]
     end
-
+ 
     subgraph Vercel["Vercel (Hosting + Serverless Functions)"]
-        API["/api/ai-notes"]
+        API["api/summarize.js"]
     end
-
+ 
     subgraph Supabase["Supabase"]
         DB[("Postgres — boards & shapes")]
         RT["Realtime Channels"]
-        AUTH["Auth (optional/anonymous)"]
     end
-
+ 
     Groq["Groq LLM API"]
-
+ 
     UI -- "read/write board state" --> DB
     UI <-- "live cursor + shape sync" --> RT
     RT -- "change stream" --> DB
@@ -191,7 +188,6 @@ flowchart LR
     API -- "board content" --> Groq
     Groq -- "structured notes" --> API
     API -- "AI Notes result" --> UI
-    UI -. "auth session" .-> AUTH
 ```
 
 **Key decisions:**
@@ -264,24 +260,45 @@ The extension is a thin, Manifest V3 wrapper that gets DrawDock one click away f
 ## 📂 Folder Structure
 
 ```
-drawdock/
-├── extension/               # Chrome Extension (Manifest V3)
+DrawDock/
+├── api/
+│   └── summarize.js          # Vercel serverless function — calls Groq for AI Notes
+├── extentions/                # Chrome Extension (Manifest V3) — note: folder name has a typo
+│   ├── install-extension.png
 │   ├── manifest.json
-│   ├── popup/
-│   └── icons/
-├── src/                      # React web app
-│   ├── components/           # Toolbar, Board, StickyNote, ShareModal, AINotesPanel
-│   ├── hooks/                 # useRealtimeBoard, usePresence, useAINotes
-│   ├── lib/                   # Supabase client, Groq client
-│   ├── pages/
-│   └── App.jsx
-├── api/                       # Vercel serverless functions
-│   └── ai-notes.js
+│   ├── popup.css
+│   ├── popup.html
+│   └── popup.js
 ├── images/                    # README screenshots/gifs
+│   ├── ai-notes.png
+│   ├── collaboration.gif
+│   ├── extension.png
+│   ├── home.png
+│   ├── install-extension.png
+│   ├── logo.png
+│   └── share.png
 ├── public/
-├── .env.example
+│   ├── favicon.svg
+│   └── icons.svg
+├── src/
+│   ├── assets/
+│   │   ├── hero.png
+│   │   ├── react.svg
+│   │   └── vite.svg
+│   ├── lib/
+│   │   └── supabase.js       # Supabase client setup
+│   ├── App.css
+│   ├── App.jsx                # Main app component (canvas, toolbar, etc.)
+│   ├── index.css
+│   └── main.jsx                # React entry point
+├── .gitignore
+├── DrawDock.png                # Logo
+├── eslint.config.js
+├── index.html                  # Vite entry point
+├── package-lock.json
 ├── package.json
-└── README.md
+├── README.md
+└── vite.config.js
 ```
 
 ---
@@ -337,8 +354,6 @@ VITE_SUPABASE_ANON_KEY=your-supabase-anon-key
 # Groq (server-side only — used inside /api routes)
 GROQ_API_KEY=your-groq-api-key
 ```
-
-> ⚠️ Never expose `GROQ_API_KEY` on the client. It's only read inside the serverless `/api/ai-notes` function.
 
 ---
 
