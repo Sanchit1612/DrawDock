@@ -14,7 +14,7 @@
 [![Made with React](https://img.shields.io/badge/react-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Supabase](https://img.shields.io/badge/supabase-realtime-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 
-**🌐 Live Demo** · [drawdock.vercel.app](https://YOUR-VERCEL-LINK.vercel.app)  ·  **📦 Extension** · [Installation Guide](#-chrome-extension)
+**🌐 Live Demo** · [drawdock.vercel.app](https://draw-dock.vercel.app/)  ·  **📦 Extension** · [Installation Guide](#-chrome-extension)
 
 ⭐ *If DrawDock is useful to you, consider starring the repo — it genuinely helps.*
 
