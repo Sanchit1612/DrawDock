@@ -78,7 +78,7 @@ DrawDock is designed to be **one click away**, disposable-but-shareable, and sma
 
 ## 🎥 Demo
 
-🌐 **Live App:** [`https://YOUR-VERCEL-LINK.vercel.app`](https://draw-dock.vercel.app/)
+🌐 **Live App:** [`https://draw-dock.vercel.app/`](https://draw-dock.vercel.app/)
 
 | Scenario | Try it |
 |---|---|
