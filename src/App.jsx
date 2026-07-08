@@ -202,7 +202,7 @@ const notes = editorRef.current
             </button></>
       )}
       
-        <Tldraw licenseKey={import.meta.env.TLDRAW_LICENSE_KEY}
+        <Tldraw licenseKey={import.meta.env.VITE_TLDRAW_LICENSE_KEY}
           onMount={(editor) => {
             console.log("🔥 ONMOUNT");
             editorRef.current = editor;
