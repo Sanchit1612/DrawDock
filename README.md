@@ -11,8 +11,6 @@
 *A production-grade digital board for real-time collaboration, note-taking, and online learning — packaged as a free Chrome Extension.*
 
 [![Live Demo](https://img.shields.io/badge/demo-live-2ea44f?style=for-the-badge)](https://draw-dock.vercel.app/)
-[![Chrome Extension](https://img.shields.io/badge/chrome-extension-4285F4?style=for-the-badge&logo=googlechrome&logoColor=white)](#-chrome-extension)
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue?style=for-the-badge)](LICENSE)
 [![Made with React](https://img.shields.io/badge/react-18-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev)
 [![Supabase](https://img.shields.io/badge/supabase-realtime-3ECF8E?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com)
 
