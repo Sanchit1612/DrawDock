@@ -360,10 +360,12 @@ This project was built with heavy, intentional use of AI-assisted development:
 
 | Tool | How it was used |
 |---|---|
-| **Claude** | Architecture decisions, README/documentation drafting, debugging Supabase Realtime edge cases |
-| **GitHub Copilot / Cursor** | In-editor autocomplete for boilerplate React components and Tailwind styling |
-| **ChatGPT / Gemini** | Exploring tldraw API options, comparing realtime backends before settling on Supabase |
 | **Groq (product feature, not just a dev tool)** | Powers the in-app AI Notes summarization feature end users interact with |
+| **ChatGPT** | Exploring tldraw API options, comparing realtime backends before settling on Supabase |
+| **Claude** | Architecture decisions, README/documentation drafting, debugging Supabase Realtime edge cases |
+| **VS Code Extentions** | In-editor autocomplete for boilerplate React components and Tailwind styling |
+
+
 
 AI tools accelerated boilerplate and research, but every architectural decision — tldraw vs. custom canvas, Supabase vs. a custom WebSocket server, Groq for low-latency summarization — was made and validated manually against the project's actual requirements.
 
@@ -395,11 +397,6 @@ This is currently a personal project, but issues, suggestions, and pull requests
 
 ---
 
-## 📄 License
-
-Licensed under the [MIT License](LICENSE).
-
----
 
 <div align="center">
 
@@ -407,8 +404,8 @@ Licensed under the [MIT License](LICENSE).
 
 **Sanchit Goel**
 
-[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/<your-username>)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/<your-linkedin>)
+[![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sanchit1612)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanchitgoel1>)
 
 *Built with ☕, curiosity, and a healthy amount of AI pair-programming.*
 
