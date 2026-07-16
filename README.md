@@ -420,7 +420,7 @@ This is currently a personal project, but issues, suggestions, and pull requests
 **Sanchit Goel**
 
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Sanchit1612)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanchitgoel1>)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/sanchitgoel1)
 
 *Built with ☕, curiosity, and a healthy amount of AI pair-programming.*
 
